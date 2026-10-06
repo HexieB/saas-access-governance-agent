@@ -14,7 +14,7 @@ The engine reads native Okta event logs (`user.session.start`, `user.mfa.factor.
 
 1. Clone the operational repository:
    ```bash
-   git clone https://github.com/hexieb
+   git clone https://github.com/HexieB/saas-access-governance-agent.git
    cd saas-access-governance-agent
    ```
 
