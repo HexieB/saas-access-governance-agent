@@ -1,0 +1,82 @@
+[
+    {
+        "eventId": "okta_ev_09112",
+        "published": "2026-10-06T15:30:00.000Z",
+        "eventType": "user.session.start",
+        "actor": {
+            "id": "usr_88319",
+            "displayName": "sarah.jones@enterprise.com"
+        },
+        "client": {
+            "ipAddress": "162.243.15.42",
+            "geographicalContext": {
+                "city": "Oakland",
+                "country": "United States"
+            }
+        },
+        "outcome": {
+            "result": "SUCCESS"
+        },
+        "debugContext": {
+            "debugData": {
+                "authMethod": "PASSWORD_MFA_PUSH"
+            }
+        }
+    },
+    {
+        "eventId": "okta_ev_09113",
+        "published": "2026-10-06T15:38:00.000Z",
+        "eventType": "user.mfa.factor.deactivate",
+        "actor": {
+            "id": "usr_88319",
+            "displayName": "sarah.jones@enterprise.com"
+        },
+        "client": {
+            "ipAddress": "45.227.254.12",
+            "geographicalContext": {
+                "city": "St. Petersburg",
+                "country": "Russia"
+            }
+        },
+        "outcome": {
+            "result": "SUCCESS"
+        },
+        "debugContext": {
+            "debugData": {
+                "factorType": "TOTP_HARDWARE",
+                "reason": "Impossible travel threshold crossed"
+            }
+        }
+    },
+    {
+        "eventId": "okta_ev_09114",
+        "published": "2026-10-06T15:42:00.000Z",
+        "eventType": "user.account.privilege.grant",
+        "actor": {
+            "id": "usr_9901_svc",
+            "displayName": "root_automation_service"
+        },
+        "target": [
+            {
+                "id": "usr_88319",
+                "displayName": "sarah.jones@enterprise.com",
+                "type": "User"
+            }
+        ],
+        "client": {
+            "ipAddress": "45.227.254.12",
+            "geographicalContext": {
+                "city": "St. Petersburg",
+                "country": "Russia"
+            }
+        },
+        "outcome": {
+            "result": "SUCCESS"
+        },
+        "debugContext": {
+            "debugData": {
+                "roleGranted": "Super Administrator"
+            }
+        }
+    }
+]

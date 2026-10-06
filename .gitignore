@@ -1,0 +1,18 @@
+# Virtual environment build directory
+venv/
+.venv/
+
+# Environment configurations and secret API keys
+.env
+*.env
+
+# Local data archive directories
+logs_archive/
+
+# Python compiled cache artifacts
+__pycache__/
+*.pyc
+
+# Local AI-generated markdown reports
+*_audit_report.md
+identity_audit_report.md
